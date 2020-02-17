@@ -1,132 +1,137 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Bootstrap-結合skrollr製作捲動式網頁</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Serif+TC:500,900&amp;display=swap'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cinzel:400,700&amp;display=swap'><link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <title>Bootstrap-結合skrollr製作捲動式網頁</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Serif+TC:500,900&amp;display=swap'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cinzel:400,700&amp;display=swap'>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<nav class="navbar navbar-expand navbar-dark fixed-top nb_top">
-  <div class="container"><a class="navbar-brand" href="#">Cocktail</a>
-    <ul class="navbar-nav navbar-right">
-      <li class="nav-item activ"><a class="nav-link" href="#INTRO">引言 INTRO</a></li>
-      <li class="nav-item activ"><a class="nav-link" href="#PROPOSAL">提案 PROPOSAL</a></li>
-      <li class="nav-item activ"><a class="nav-link" href="#FEEL">感受 FEEL</a></li>
-      <li class="nav-item activ"><a class="nav-link" href="#CREATE">創造 CREATE</a></li>
-    </ul>
-  </div>
-</nav>
-<header class="jumbotron">
-  <div class="container title">
-    <div class="display-4" data-0="transform: translateY(0px);" data-200="transform: translateY(100px);">尋覓命中注定的雞尾酒</div>
-    <hr data-0="transform: translateY(0px);" data-200="transform: translateY(100px);"/>
-    <h4 data-0="transform: translateY(0px);" data-200="transform: translateY(100px);">選對基酒，搭配酒杯，說個調酒故事</h4>
-  </div>
-</header>
-<section id="INTRO">  
-  <div class="container-fluid sec">
-    <div class="row justify-content-center align-items-center">
-      <div class="col col-xl-4 col-md-5 col-8">
-        <div class="pic" data-0="transform: translateX(-250px);" data-center="transform: translateX(0px);"></div>
-      </div>
-      <div class="col col-md-5 col-12">
-        <h3 data-0="opacity: 0;transform: translateY(50px);" data-center="opacity: 1;transform: translateY(-15px);">嚐過雞尾酒<br>但好像又不是太了解雞尾酒？</h3>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="PROPOSAL">
-  <div class="container-fiuid info">
-    <h2 data-0="opacity: 0;transform: translateY(-50px);" data-center="opacity: 1;transform: translateY(0px);">雞尾酒生活提案</h2>
-    <hr data-0="opacity: 0;transform: translateY(-50px);" data-center="opacity: 1;transform: translateY(0px);"/>
-    <div class="row">
-      <div class="col col-md-4 col-12">
-        <div class="img1" data-0="opacity: 0;transform: translateY(100px);" data-center="opacity: 1;transform: translateY(0px);"></div>
-        <h5 data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);">選擇「正確」的酒杯</h5>
-        <p data-0="opacity: 0.5;transform: translateY(170px);" data-center="opacity: 1;transform: translateY(0px);">酒杯不只盛酒好看而已，跟調酒方法也很有關係。用錯杯子可能會滿出來，亦可能搗薄荷葉時一不小心讓杯子粉身碎骨。而唯一沒有的限制是想像力，創造新款雞尾酒時，請大膽發揮創意，無論是挖空的水果、貝殼、試管和碗，都可以拿來盛裝雞尾酒。不過千萬別忘了，你選擇的容器要有最好的意象，且和你想創造的品嚐體驗有關，才能更突顯雞尾酒的特色。</p>
-      </div>
-      <div class="col col-md-4 col-12">
-        <div class="img2" data-0="opacity: 0;transform: translateY(100px);" data-center="opacity: 1;transform: translateY(0px);"></div>
-        <h5 data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);">什麼場合適合喝什麼雞尾酒</h5>
-        <p data-0="opacity: 0.5;transform: translateY(170px);" data-center="opacity: 1;transform: translateY(0px);">喝雞尾酒不只看心情，別忘了考慮時段、主題和天氣。餐前適合香氣十足的雞尾酒，引起食欲；餐後不妨多一點酒精，有助消化。如果是傍晚的婚宴派對，但就不宜選酒精濃度太高的雞尾酒；若氣溫高達35℃的大熱天，太甜的酒也不適合。</p>
-      </div>
-      <div class="col col-md-4 col-12">
-        <div class="img3" data-0="opacity: 0;transform: translateY(100px);" data-center="opacity: 1;transform: translateY(0px);"></div>
-        <h5 data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);">調酒技術／花招</h5>
-        <p data-0="opacity: 0.5;transform: translateY(170px);" data-center="opacity: 1;transform: translateY(0px);">「折磨」果皮讓香氣精華在酒液表面散開；在火源上方擠壓果皮，摩擦杯緣或杯腳，喝酒時嘴唇可直接接觸精油；或是將果皮雕成一片令人驚豔的翅膀，插在杯緣當作裝飾；而利用密度和稠度，調一杯顏色層層分明的酒；和用油脂「洗」出風格獨特的基酒；甚至在雞尾酒杯裡「點火」。  </p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="FEEL"> 
-  <div class="container-fluid senses">
-    <div class="row">
-      <div class="col col-md-6 col-12 sample" data-0="transform:scale(6);" data-center="transform:scale(1);">
-        <div class="sample_h"></div>
-      </div>
-      <div class="col col-md-6 col-12 text justify-content-center align-items-center">
-        <div class="col col-12"> 
-          <h2 data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);">雞尾酒是各種感官的組合，創出全新的感受。</h2>
-          <hr data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);"/>
-          <div class="row">
-            <div class="col col-sm-4 col-12">
-              <div class="pic_1 eye" data-0="transform: scale(0);" data-center="transform: scale(1);"></div>
-              <h5 data-0="transform: scale(0);" data-center="transform: scale(1);">視覺</h5>
-            </div>
-            <div class="col col-sm-4 col-12">
-              <div class="pic_1 nose" data-0="transform: scale(0);" data-center="transform: scale(1);"></div>
-              <h5 data-0="transform: scale(0);" data-center="transform: scale(1);">嗅覺</h5>
-            </div>
-            <div class="col col-sm-4 col-12">
-              <div class="pic_1 mouth" data-0="transform: scale(0);" data-center="transform: scale(1);"></div>
-              <h5 data-0="transform: scale(0);" data-center="transform: scale(1);">味覺</h5>
-            </div>
-          </div>
+    <!-- partial:index.partial.html -->
+    <nav class="navbar navbar-expand navbar-dark fixed-top nb_top">
+        <div class="container"><a class="navbar-brand" href="#">Cocktail</a>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item activ"><a class="nav-link" href="#INTRO">引言 INTRO</a></li>
+                <li class="nav-item activ"><a class="nav-link" href="#PROPOSAL">提案 PROPOSAL</a></li>
+                <li class="nav-item activ"><a class="nav-link" href="#FEEL">感受 FEEL</a></li>
+                <li class="nav-item activ"><a class="nav-link" href="#CREATE">創造 CREATE</a></li>
+            </ul>
         </div>
-        <div class="col col-12" data-0="transform: scale(0.6);" data-center="transform: scale(1);"> 
-          <p>人們為什麼喜歡雞尾酒？不是因為一杯就能喝到很多種酒很划算，而是追求那完美融合的風味。不是因為電影主角喝調酒的樣子很帥，而是品嚐每一款酒背後的故事。調酒是門藝術，考慮到味道、顏色、香氣和溫度，調製過程就是一場感官饗宴，其實雞尾酒也不是這麼高不可攀，只要按照酒譜的指示，在家也可以調出好喝的雞尾酒。有些調酒甚至只需要兩種材料，就能激盪出全新風味，是不是很神奇？</p>
+    </nav>
+    <header class="jumbotron">
+        <div class="container title">
+            <div class="display-4" data-0="transform: translateY(0px);" data-200="transform: translateY(100px);">尋覓命中注定的雞尾酒</div>
+            <hr data-0="transform: translateY(0px);" data-200="transform: translateY(100px);" />
+            <h4 data-0="transform: translateY(0px);" data-200="transform: translateY(100px);">選對基酒，搭配酒杯，說個調酒故事</h4>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="CREATE">
-  <div class="container-fiuid create">
-    <h2 data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);">雞尾酒的藝術</h2>
-    <hr data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);"/>
-    <div class="row justify-content-center align-items-center">
-      <div class="col col-xl-9 col-lg-10 col-12">
-        <p data-bottom-top="transform: translateX(50px);" data-center="transform: translateX(0px);">任何一款雞尾酒，有了好的創意還需要通過具體的酒品來進行具體形象的表達，因此，確定了創意後，認真準確地選擇調配原料酒顯得十分重要。選擇調配材料的關鍵是要對各種酒品的特性要有充分的認識，這些特性主要包括酒品的生產原料、生產工藝、口味特徵、色澤變化、酒品相對密度、酒精含量等，如果對這些知識不了解，在雞尾酒調製和創新時酒很難達到理想的效果。</p>
-      </div>
-      <div class="col col-xl-4 col-lg-5 col-md-6 col-8">
-        <div class="cct" data-bottom-top="webkit-filter:brightness(0.2);" data-center="webkit-filter:brightness(1);"></div>
-      </div>
-      <div class="col col-lg-5 col-md-6 col-12 text" data-bottom-top="transform: translateX(50px);" data-center="transform: translateX(0px);">
-        <h5>基酒的選用</h5>
-        <p>雞尾酒是由基酒、副材料和裝飾物等構成。可以用作基酒的酒品主要有琴酒、蘭姆酒、伏特加酒、威士忌酒、白蘭地酒、特吉拉酒、葡萄酒、香檳酒、中國白酒等。這些酒品中，最常見的是琴酒、伏特加酒和蘭姆酒，這幾種酒最大的特點是無色透明、酒性溫和，易與其他調配材料相調和，易與各種色酒相調配而不改變色酒的色澤，保持其色澤的鮮豔性，因此，以這三種酒為基酒調配的雞尾酒佔了全部雞尾酒總數的2/3以上。。</p>
-        <h5>副材料的選用</h5>
-        <p>雞尾酒調製的副材料品種很多，酒性各異，這是在選料中最需要技術的工作。創新者能否通過這些調緩材料正確表現酒品的色、香、味以及所要表達的創新意圖，很大程度上取決於這些調酒副材</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="END">
-  <div class="container end">
-    <h2>想了解更多有關雞尾酒的細節嗎?</h2>
-    <input placeholder="Email..."/>
-    <hr/>
-    <div class="btn btn-secondary">訂閱故事</div>
-  </div>
-</section>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script><script  src="./script.js"></script>
+    </header>
+    <section id="INTRO">
+        <div class="container-fluid sec">
+            <div class="row justify-content-center align-items-center">
+                <div class="col col-xl-4 col-md-5 col-8">
+                    <div class="pic" data-0="transform: translateX(-250px);" data-center="transform: translateX(0px);"></div>
+                </div>
+                <div class="col col-md-5 col-12">
+                    <h3 data-0="opacity: 0;transform: translateY(50px);" data-center="opacity: 1;transform: translateY(-15px);">嚐過雞尾酒<br>但好像又不是太了解雞尾酒？</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="PROPOSAL">
+        <div class="container-fiuid info">
+            <h2 data-0="opacity: 0;transform: translateY(-50px);" data-center="opacity: 1;transform: translateY(0px);">雞尾酒生活提案</h2>
+            <hr data-0="opacity: 0;transform: translateY(-50px);" data-center="opacity: 1;transform: translateY(0px);" />
+            <div class="row">
+                <div class="col col-md-4 col-12">
+                    <div class="img1" data-0="opacity: 0;transform: translateY(100px);" data-center="opacity: 1;transform: translateY(0px);"></div>
+                    <h5 data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);">選擇「正確」的酒杯</h5>
+                    <p data-0="opacity: 0.5;transform: translateY(170px);" data-center="opacity: 1;transform: translateY(0px);">酒杯不只盛酒好看而已，跟調酒方法也很有關係。用錯杯子可能會滿出來，亦可能搗薄荷葉時一不小心讓杯子粉身碎骨。而唯一沒有的限制是想像力，創造新款雞尾酒時，請大膽發揮創意，無論是挖空的水果、貝殼、試管和碗，都可以拿來盛裝雞尾酒。不過千萬別忘了，你選擇的容器要有最好的意象，且和你想創造的品嚐體驗有關，才能更突顯雞尾酒的特色。</p>
+                </div>
+                <div class="col col-md-4 col-12">
+                    <div class="img2" data-0="opacity: 0;transform: translateY(100px);" data-center="opacity: 1;transform: translateY(0px);"></div>
+                    <h5 data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);">什麼場合適合喝什麼雞尾酒</h5>
+                    <p data-0="opacity: 0.5;transform: translateY(170px);" data-center="opacity: 1;transform: translateY(0px);">喝雞尾酒不只看心情，別忘了考慮時段、主題和天氣。餐前適合香氣十足的雞尾酒，引起食欲；餐後不妨多一點酒精，有助消化。如果是傍晚的婚宴派對，但就不宜選酒精濃度太高的雞尾酒；若氣溫高達35℃的大熱天，太甜的酒也不適合。</p>
+                </div>
+                <div class="col col-md-4 col-12">
+                    <div class="img3" data-0="opacity: 0;transform: translateY(100px);" data-center="opacity: 1;transform: translateY(0px);"></div>
+                    <h5 data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);">調酒技術／花招</h5>
+                    <p data-0="opacity: 0.5;transform: translateY(170px);" data-center="opacity: 1;transform: translateY(0px);">「折磨」果皮讓香氣精華在酒液表面散開；在火源上方擠壓果皮，摩擦杯緣或杯腳，喝酒時嘴唇可直接接觸精油；或是將果皮雕成一片令人驚豔的翅膀，插在杯緣當作裝飾；而利用密度和稠度，調一杯顏色層層分明的酒；和用油脂「洗」出風格獨特的基酒；甚至在雞尾酒杯裡「點火」。 </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="FEEL">
+        <div class="container-fluid senses">
+            <div class="row">
+                <div class="col col-md-6 col-12 sample" data-0="transform:scale(6);" data-center="transform:scale(1);">
+                    <div class="sample_h"></div>
+                </div>
+                <div class="col col-md-6 col-12 text justify-content-center align-items-center">
+                    <div class="col col-12">
+                        <h2 data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);">雞尾酒是各種感官的組合，創出全新的感受。</h2>
+                        <hr data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);" />
+                        <div class="row">
+                            <div class="col col-sm-4 col-12">
+                                <div class="pic_1 eye" data-0="transform: scale(0);" data-center="transform: scale(1);"></div>
+                                <h5 data-0="transform: scale(0);" data-center="transform: scale(1);">視覺</h5>
+                            </div>
+                            <div class="col col-sm-4 col-12">
+                                <div class="pic_1 nose" data-0="transform: scale(0);" data-center="transform: scale(1);"></div>
+                                <h5 data-0="transform: scale(0);" data-center="transform: scale(1);">嗅覺</h5>
+                            </div>
+                            <div class="col col-sm-4 col-12">
+                                <div class="pic_1 mouth" data-0="transform: scale(0);" data-center="transform: scale(1);"></div>
+                                <h5 data-0="transform: scale(0);" data-center="transform: scale(1);">味覺</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12" data-0="transform: scale(0.6);" data-center="transform: scale(1);">
+                        <p>人們為什麼喜歡雞尾酒？不是因為一杯就能喝到很多種酒很划算，而是追求那完美融合的風味。不是因為電影主角喝調酒的樣子很帥，而是品嚐每一款酒背後的故事。調酒是門藝術，考慮到味道、顏色、香氣和溫度，調製過程就是一場感官饗宴，其實雞尾酒也不是這麼高不可攀，只要按照酒譜的指示，在家也可以調出好喝的雞尾酒。有些調酒甚至只需要兩種材料，就能激盪出全新風味，是不是很神奇？</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="CREATE">
+        <div class="container-fiuid create">
+            <h2 data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);">雞尾酒的藝術</h2>
+            <hr data-0="opacity: 0;transform: translateY(150px);" data-center="opacity: 1;transform: translateY(0px);" />
+            <div class="row justify-content-center align-items-center">
+                <div class="col col-xl-9 col-lg-10 col-12">
+                    <p data-bottom-top="transform: translateX(50px);" data-center="transform: translateX(0px);">任何一款雞尾酒，有了好的創意還需要通過具體的酒品來進行具體形象的表達，因此，確定了創意後，認真準確地選擇調配原料酒顯得十分重要。選擇調配材料的關鍵是要對各種酒品的特性要有充分的認識，這些特性主要包括酒品的生產原料、生產工藝、口味特徵、色澤變化、酒品相對密度、酒精含量等，如果對這些知識不了解，在雞尾酒調製和創新時酒很難達到理想的效果。</p>
+                </div>
+                <div class="col col-xl-4 col-lg-5 col-md-6 col-8">
+                    <div class="cct" data-bottom-top="webkit-filter:brightness(0.2);" data-center="webkit-filter:brightness(1);"></div>
+                </div>
+                <div class="col col-lg-5 col-md-6 col-12 text" data-bottom-top="transform: translateX(50px);" data-center="transform: translateX(0px);">
+                    <h5>基酒的選用</h5>
+                    <p>雞尾酒是由基酒、副材料和裝飾物等構成。可以用作基酒的酒品主要有琴酒、蘭姆酒、伏特加酒、威士忌酒、白蘭地酒、特吉拉酒、葡萄酒、香檳酒、中國白酒等。這些酒品中，最常見的是琴酒、伏特加酒和蘭姆酒，這幾種酒最大的特點是無色透明、酒性溫和，易與其他調配材料相調和，易與各種色酒相調配而不改變色酒的色澤，保持其色澤的鮮豔性，因此，以這三種酒為基酒調配的雞尾酒佔了全部雞尾酒總數的2/3以上。。</p>
+                    <h5>副材料的選用</h5>
+                    <p>雞尾酒調製的副材料品種很多，酒性各異，這是在選料中最需要技術的工作。創新者能否通過這些調緩材料正確表現酒品的色、香、味以及所要表達的創新意圖，很大程度上取決於這些調酒副材</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="END">
+        <div class="container end">
+            <h2>想了解更多有關雞尾酒的細節嗎?</h2>
+            <input placeholder="Email..." />
+            <hr/>
+            <div class="btn btn-secondary">訂閱故事</div>
+        </div>
+    </section>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
+    <script src="./script.js"></script>
 
 </body>
+
 </html>
