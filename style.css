@@ -1,0 +1,204 @@
+* {
+  position: relative;
+  font-family: "Cinzel", "Noto Serif TC";
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+nav.navbar.navbar-expand.navbar-dark.fixed-top {
+  transition: 0.8s;
+  background-color: #555;
+  opacity: 0.9;
+}
+nav.navbar.navbar-expand.navbar-dark.fixed-top ul a:hover {
+  color: #DE6B48;
+}
+
+nav.navbar.navbar-expand.navbar-dark.fixed-top.nb_top {
+  transition: 0.7s;
+  background-color: transparent;
+}
+nav.navbar.navbar-expand.navbar-dark.fixed-top.nb_top a {
+  color: #ddd;
+}
+
+header.jumbotron {
+  margin-bottom: 0;
+  background-image: url(https://punchdrink.com/wp-content/uploads/2016/11/Slide-2-San-Francisco-Cocktail-Bar-Crawl-Tommys-Townhouse-Starlight-Room-Bar-Agricole-Rye.jpg);
+  background-position: 50% 30%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  color: #B4C5E4;
+  padding: 210px 50px;
+  padding-left: 120px;
+  background-color: #73BA9B;
+  background-color: transparent;
+}
+.title hr {
+  max-width: 88px;
+  border: solid 2px #DE6B48;
+  margin-left: 10px;
+}
+
+.sec {
+  background-color: #353535;
+  padding: 60px;
+}
+.sec h3 {
+  text-align: center;
+  color: #eee;
+  line-height: 50px;
+}
+.sec .pic {
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+  background-image: url(https://i.pinimg.com/564x/92/c3/05/92c3059cd81efb9e88855951bd97f194.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 15px;
+  border: 2px solid #faa5c6;
+}
+
+.info {
+  color: #353535;
+  padding: 55px 50px;
+}
+.info h2, .info h5 {
+  text-align: center;
+  padding: 20px;
+}
+.info h5 {
+  margin: 20px;
+}
+.info hr {
+  border: solid 1px #DE6B48;
+  margin-bottom: 30px;
+}
+
+.img3, .img2, .img1 {
+  background-size: cover;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+  border-radius: 30px;
+}
+
+.img1 {
+  border: 1px solid #6f869a;
+  background-image: url(https://i.pinimg.com/originals/cc/03/bb/cc03bb4410e357bd26474c16583d7bc9.gif);
+  background-position: 50% 50%;
+  background-size: 50%;
+}
+
+.img2 {
+  background-image: url(https://i.pinimg.com/564x/d4/ca/3a/d4ca3aae40f0fc9d45f00b969c46827f.jpg);
+  background-position: 0% 60%;
+  background-size: cover;
+}
+
+.img3 {
+  background-image: url(https://i.pinimg.com/564x/81/c3/ac/81c3acb9758648c82c0bc4d09f5eac44.jpg);
+  background-position: 0% 47%;
+  background-size: cover;
+}
+
+.senses {
+  background-color: #f3f3e9;
+  overflow: hidden;
+}
+
+.sample {
+  background-image: url(https://stinenygard.com/wp-content/uploads/2017/03/classic-cocktails.jpg);
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+.sample_h {
+  height: 500px;
+  overflow: hidden;
+}
+
+.text h2 {
+  text-align: center;
+  padding: 50px 0px 30px 0px;
+}
+.text h5 {
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+}
+.text hr {
+  border: solid 1px #DE6B48;
+  margin-bottom: 40px;
+}
+.text p {
+  padding: 20px;
+}
+
+.pic_1 {
+  margin: auto;
+  width: 80%;
+  height: 0;
+  padding-top: 80%;
+  border-radius: 50%;
+}
+
+.eye {
+  background-image: url(https://cdn.dribbble.com/users/661232/screenshots/5543287/5-senses-dribbble-05_4x.png);
+  background-size: cover;
+  background-position: 54% 0%;
+}
+
+.nose {
+  background-image: url(https://cdn.dribbble.com/users/661232/screenshots/5543239/5-senses-dribbble-09_4x.png);
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+.mouth {
+  background-image: url(https://cdn.dribbble.com/users/661232/screenshots/5543259/5-senses-dribbble-08_4x.png);
+  background-size: cover;
+  background-position: 45% 0%;
+}
+
+.create {
+  background-color: #DECBB7;
+  color: #353535;
+  padding: 55px 50px;
+  text-align: center;
+}
+.create p {
+  padding: 15px;
+}
+.create hr {
+  border: solid 1px #DE6B48;
+  margin-bottom: 30px;
+}
+
+.cct {
+  width: 100%;
+  height: 0;
+  padding-top: 120%;
+  background-image: url(http://roblawson.com/wp-content/uploads/2015/09/JW_Goldrush_Craft_w2-767x1024.jpg);
+  background-size: cover;
+  background-position: 50% 0%;
+  border-radius: 50px;
+}
+
+.end {
+  padding: 100px;
+}
+.end input {
+  padding: 2px 5px;
+}
+.end hr {
+  border: solid 1px #DE6B48;
+  margin-bottom: 30px;
+}
